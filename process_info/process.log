@@ -1,0 +1,43 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 04:00 ?        00:00:00 /sbin/init
+root           2       1  0 04:00 hvc0     00:00:00 /init
+root           6       2  0 04:00 hvc0     00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          46       1  0 04:00 ?        00:00:00 /usr/lib/systemd/systemd-journald
+systemd+      79       1  0 04:00 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+root          87       1  0 04:00 ?        00:00:05 /usr/lib/systemd/systemd-udevd
+root         171       1  0 04:00 ?        00:00:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         172       1  0 04:00 ?        00:00:00 /usr/sbin/cron -f -P
+message+     177       1  0 04:00 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         197       1  0 04:00 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         208       1  0 04:00 ?        00:00:00 /usr/lib/systemd/systemd-logind
+syslog       250       1  0 04:00 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+_chrony      288     171  0 04:00 ?        00:00:00 /usr/sbin/chronyd -n -F 1 -x
+root         291       1  0 04:00 tty1     00:00:00 /usr/sbin/agetty --noreset --noclear --issue-file=/etc/issue:/etc/issue.d:/run/issue.d:/usr/lib/issue.d - linux
+root         297       1  0 04:00 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+_chrony      313     288  0 04:00 ?        00:00:00 /usr/sbin/chronyd -n -F 1 -x
+root         407       2  0 04:00 ?        00:00:00 login -- kavya
+kavya        451       1  0 04:00 ?        00:00:00 /usr/lib/systemd/systemd --user
+kavya        453     451  0 04:00 ?        00:00:00 (sd-pam)
+kavya        481     407  0 04:00 pts/1    00:00:00 -bash
+root        6471       2  0 04:31 ?        00:00:00 /init
+root        6472    6471  0 04:31 ?        00:00:00 /init
+kavya       6473    6472  0 04:31 pts/0    00:00:00 -bash
+root        6680       2  0 04:45 ?        00:00:00 /init
+root        6681    6680  0 04:45 ?        00:00:00 /init
+kavya       6682    6681  0 04:45 pts/2    00:00:00 sh -c "$VSCODE_WSL_EXT_LOCATION/scripts/wslServer.sh" a5b500951314efd502d07465bd138dfbd714a960 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=446559300-2212658518-1389707164-3240965232 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+kavya       6683    6682  0 04:45 pts/2    00:00:00 sh /mnt/c/Users/kavya/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3/scripts/wslServer.sh a5b500951314efd502d07465bd138dfbd714a960 stable code-server .vscode-server --host=127.0.0.1 --port=0 --connection-token=446559300-2212658518-1389707164-3240965232 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+kavya       6689    6683  0 04:45 pts/2    00:00:00 sh /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/bin/code-server --host=127.0.0.1 --port=0 --connection-token=446559300-2212658518-1389707164-3240965232 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+kavya       6693    6689  0 04:45 pts/2    00:00:08 /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/node /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/out/server-main.js --host=127.0.0.1 --port=0 --connection-token=446559300-2212658518-1389707164-3240965232 --use-host-proxy --without-browser-env-var --disable-websocket-compression --accept-server-license-terms --telemetry-level=all
+root        6705       2  0 04:45 ?        00:00:00 /init
+root        6706    6705  0 04:45 ?        00:00:00 /init
+kavya       6707    6706  0 04:45 pts/3    00:00:01 /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/node -e const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 36365 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+root        6714       2  0 04:45 ?        00:00:00 /init
+root        6715    6714  0 04:45 ?        00:00:00 /init
+kavya       6716    6715  0 04:45 pts/4    00:00:02 /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/node -e const net = require('net'); process.stdin.pause(); const client = net.createConnection({ host: '127.0.0.1', port: 36365 }, () => { client.pipe(process.stdout); process.stdin.pipe(client); }); client.on('close', function (hadError) { console.error(hadError ? 'Remote close with error' : 'Remote close'); process.exit(hadError ? 1 : 0); }); client.on('error', function (err) { process.stderr.write(err && (err.stack || err.message) || String(err)); });
+kavya       6729    6693  0 04:45 pts/2    00:00:01 /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/node /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/out/bootstrap-fork --type=fileWatcher
+kavya       6757    6693  3 04:45 pts/2    00:02:15 /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/node --dns-result-order=ipv4first /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=true
+kavya       6758    6693  0 04:45 pts/2    00:00:03 /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/node /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/out/bootstrap-fork --type=agentHost --logsPath /home/kavya/.vscode-server/data/logs/20260818T044504 --user-data-dir /home/kavya/.vscode-server/data
+kavya       6799    6758  0 04:45 pts/2    00:00:02 /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/node /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/node_modules/@github/copilot-linux-x64/index.js --headless --no-auto-update --log-level info --stdio --no-auto-login
+kavya       7453    6757  0 04:48 pts/2    00:00:00 /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/node /home/kavya/.vscode-server/bin/a5b500951314efd502d07465bd138dfbd714a960/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=6757
+kavya      19715    6473  0 05:52 pts/0    00:00:00 sh input1.sh
+kavya      19770   19715  0 05:52 pts/0    00:00:00 ps -ef
